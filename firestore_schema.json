@@ -1,0 +1,19 @@
+{
+  "collections": {
+    "users": {
+      "fields": {"name":"string","email":"string","createdAt":"timestamp","role":"string"}
+    },
+    "products": {
+      "fields": {"name":"string","description":"string","price":"number","category":"string","stock":"number","imageUrl":"string"}
+    },
+    "orders": {
+      "fields": {"uid":"string","items":"array","type":"string","status":"string","createdAt":"timestamp","pickupLocation":"string"}
+    },
+    "refunds": {
+      "fields": {"orderId":"string","uid":"string","reason":"string","status":"string","createdAt":"timestamp"}
+    },
+    "feedback": {
+      "fields": {"uid":"string","text":"string","createdAt":"timestamp"}
+    }
+  }
+}
